@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+.main{ 
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    font-family: "Inria Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.login-form{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    padding: 70px;
+}
+
+.login-form h1{
+    color: #f1880d;
+}
+
+.login-img{
+    margin: 0;
+    padding: 0;
+    background-image: url('/assets/images/login.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.login input{
+    height: 46px;
+    margin-top: 10px;
+    border: none;
+    border-bottom: 1px solid #3E3172;
+}
+
+.login{
+    margin-left: 50px;
+}
+
+.login h1{
+    color: #3E3172;
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 3rem;
+}
+
+.buttons-form{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.buttons-form a{
+    text-align: center;
+    width: 100%;
+    height: 45px;
+    border-radius: 50px;
+    background-color: #3E3172;
+    color: #fff;
+    font-weight: 600;
+}
+
+.buttons-form a:hover{
+    background-color: #5f4bad;
+    cursor: pointer;
+}
+
+.row {
+    --bs-gutter-x: 0;
+}

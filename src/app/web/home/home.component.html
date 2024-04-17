@@ -1,1 +1,97 @@
-<p>home works!</p>
+<main class="main">
+    <header>
+        <div class="row container d-flex justify-content-center">
+
+          <div class="col-8">
+            <h1><b>ASISWEB</b></h1>
+          </div>
+
+        </div>
+
+        <nav>
+          <li>
+            <a href="#home">INICIO</a>
+          </li>
+          <li>
+            <a href="#servicios">SERVICIOS</a>
+          </li>
+          <li>
+            <a href="#contactos">CONTACTO</a>
+          </li>
+          <li>
+            <a href="#contactos">INGRESA <fa-icon [icon]="faSignIn"></fa-icon></a>
+          </li>
+        </nav>
+    </header>
+
+    <main>
+
+      <section id="home" class="hero">
+        <div class="hero-content">
+          <div class="home-msg">
+            <h2 style="font-weight: bold;">Encuentra tu Espacio Ideal en ASISWEB</h2>
+            <h4 >Reserve a Spot</h4>
+            <p>
+              La mejor plataforma para reservar tu espacio de trabajo ideal.
+              Explora, reserva y disfruta.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="servicios" class="featured">
+        <div class="services">
+          <div class="title-services">
+            <h2 class="p-5"><b>Espacios y Servicios</b></h2>
+          </div>
+
+          <div class="workspace-list">
+
+            <article class="col-sm-10 col-md-4 workspace">
+              <img src="../../../assets/images/reserva1.webp" alt="Espacio de Trabajo 1" />
+              <div class="workspace-info text-center">
+                <h3 class="mt-3 mb-3"><b>Parqueadero</b></h3>
+                <p style="font-style: italic;">Perfecto para diseñadores y creativos que buscan inspiración.</p>
+                <a href="#" class="btn">Ver Más</a>
+              </div>
+            </article>
+
+            <article class="col-sm-10 col-md-4 workspace">
+              <img src="../../../assets/images/reserva2.webp" alt="Espacio de Trabajo 2" />
+              <div class="workspace-info text-center">
+                <h3 class="mt-3 mb-3"><b>Puestos de Trabajo y Salas de Reunion</b></h3>
+                <p style="font-style: italic;">Ideal para reuniones, presentaciones y conferencias.</p>
+                <a href="#" class="btn">Ver Más</a>
+              </div>
+            </article>
+
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+  
+    <section id="contactos" class="contact">  
+        
+        <div class="contact-form">
+            <div class="col-12">
+                <h2 class="p-5"><b>Contáctanos</b></h2>
+            </div>
+            <form>
+                <input type="text" placeholder="Tu nombre" required />
+                <input type="email" placeholder="Tu correo electrónico" required />
+                <textarea placeholder="Tu mensaje" required></textarea>
+                <button type="submit" class="btn">Enviar Mensaje</button>
+            </form>
+        </div>
+
+    </section>
+
+    <footer>
+        <div class="footer">
+            <p>&copy; 2024 Workspace Reservations. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+</main>
