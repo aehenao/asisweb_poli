@@ -3,7 +3,7 @@
         <div class="col-sm-12 col-md-5 login-form">
             <h1 class="text-center mb-5"><b>ASISWEB</b></h1>
   
-            <form class="form validate-form login">
+            <form class="form validate-form login" [formGroup]="loginForm">
   
                 <h2><b>Iniciar Sesión</b></h2>
   
@@ -13,7 +13,9 @@
                     </div>
                     <section class="row d-flex justify-content-center">
                         <div class="col-10">
-                            <input class="form-control" type="email" name="email" placeholder="Apellidos completos" />
+                            <input class="form-control" type="email"
+                            formControlName="email" 
+                            name="email" placeholder="Apellidos completos" />
                         </div>
                     </section>
                 </div>
@@ -24,7 +26,8 @@
                     </div>
                     <section class="row d-flex justify-content-center">
                         <div class="col-10">
-                            <input class="form-control" type="password" name="password" placeholder="*************" />
+                            <input class="form-control" type="password" name="password" 
+                            formControlName="password" />
                         </div>
                     </section>
                 </div>
@@ -35,7 +38,7 @@
   
                 <div class="row buttons-form mt-5">
                     <div class="col-5">
-                        <a routerLink="/panel/dashboard" type="button" class="btn">Iniciar Sesión</a>
+                        <a  (click)="login()" type="button" class="btn">Iniciar Sesión</a>
                     </div>
 
                     <div class="col-5">
